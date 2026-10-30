@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement Team</title>
+</head>
+<body>
+    <h1>{{ team_name }} Team</h1>
+    <p>The Procurement Team is responsible for obtaining food and preparing meals to ensure everyone has the 
+        supplies and meals they need.
+    </p>
+    <h2>Team Members</h2>
+
+    <ul>
+        {% for member in members %}
+            <li>{{ member }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

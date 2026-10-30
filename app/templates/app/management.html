@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Team</title>
+</head>
+<body>
+    <h1>{{ team_name }} Team</h1>
+    <p>
+        The Management Team is responsible for organizing and assigning
+        daily chores to ensure everyone contributes to keeping the
+        workspace clean and organized.
+    </p>
+    <h2>Team Members</h2>
+
+    <ul>
+        {% for member in members %}
+            <li>{{ member }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
